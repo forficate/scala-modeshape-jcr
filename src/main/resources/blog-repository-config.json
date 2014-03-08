@@ -1,0 +1,23 @@
+{
+    "name" : "Blog",
+    "workspaces" : {
+        "predefined" : ["otherWorkspace"],
+        "default" : "default",
+        "allowCreation" : true
+    },
+    "security" : {
+        "anonymous" : {
+            "roles" : ["readonly","readwrite","admin"],
+            "useOnFailedLogin" : false
+        }
+    },
+    "storage" : {
+        "cacheConfiguration" : "infinispan.xml",
+        "cacheName" : "persisted-repository",
+        "binaryStorage" : {
+            "type" : "file",
+            "directory": "data/binaries",
+            "minimumBinarySizeInBytes" : 999
+        }
+    }
+}
