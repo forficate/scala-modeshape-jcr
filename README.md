@@ -12,7 +12,7 @@ To run the example:
 
 To run the test suite
 
-   sbt test
+    sbt test
 
 This module is used for the datastore on http://www.agileand.me , my
 Play framework powered blog.
